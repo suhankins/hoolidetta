@@ -1,81 +1,65 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Logo from '../components/Logo.astro';
+import Marquee from '../components/Marquee.astro';
+import ListOfMods from '../components/ListOfMods.astro';
+import MeAndHoney from '../components/MeAndHoney.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to Hoolidetta Marriage Foundation">
+	<Marquee />
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+		<Logo />
+		<MeAndHoney />
+		<h1 class="text-gradient">Welcome!!!</h1>
+		<p class="intro">
+			<span class="text-gradient">Welcome</span> to <b
+				>Hoolidetta Marriage Foundation</b
+			>
+			official web-site on the <i>World Wide Web!</i> Here, at <b
+				>Hoolidetta Marriage Foundation</b
+			>, <span class="text-gradient">Hooligan</span> and <span
+				class="text-gradient">Punished Bernadetta</span
+			> unite to bring Internet surfers from all around the world the best
+			in Hooligan and Punished Bernadetta content, including our <b
+				>worldwide famous</b
+			> modifications for First Person Shooter video game <b>PAYDAY 2</b>,
+			like Silent Assassin: Definitive Edition.
 		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<ListOfMods />
 	</main>
-</Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+	<style>
+		main {
+			margin: auto;
+			padding: 1.5rem;
+			max-width: 90ch;
+		}
+		h1 {
+			width: 100%;
+			text-align: center;
+			font-family: 'Cherry Bomb One', cursive;
+			font-size: 3rem;
+			margin: 0;
+		}
+		.text-gradient {
+			background-image: linear-gradient(
+				to top right,
+				#ff0098 0%,
+				#00a6ff 100% 139%
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-size: 400%;
+			background-position: 0%;
+		}
+		.intro {
+			line-height: 1.6;
+			margin: 1rem 0;
+			border: 1px solid rgba(var(--accent), 25%);
+			background-color: white;
+			padding: 1rem;
+			border-radius: 0.4rem;
+		}
+	</style>
+</Layout>

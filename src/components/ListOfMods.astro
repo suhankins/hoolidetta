@@ -1,0 +1,38 @@
+---
+import ModCard from './ModCard.astro';
+---
+
+<div class="grid">
+    <ModCard
+        image="./mods/sade.webp"
+        linkToMWS="https://modworkshop.net/mod/34479"
+        name="Silent Assassin: Definitive Edition"
+        description="This mod will take your stealth experience to the next level! The best quality of life mod of all time has returned to modworkshop once again and it's here to stay!"
+    />
+    <ModCard
+        image="./mods/cslr.webp"
+        linkToMWS="https://modworkshop.net/mod/36782"
+        name="CARRY STACKER: LIVE AND RELOADED"
+        description="CARRY STACKER: LIVE AND RELOADED takes the renowned CARRY STACKER mod into exciting new territory with an all-new action experience. The mod seamlessly melds pure action and epic bag carrying that surrounds you – a heister transformed into a half-human, half-cyborg soldier who uses their strong back to carry any bag that stands in their greedful path!"
+    />
+    <ModCard
+        image="./mods/bbfe.webp"
+        linkToMWS="https://modworkshop.net/mod/38390"
+        name="Useful Bots: Future Edition"
+        description="Useful Bots: Future Edition is designed to fix Overkill's TeamAI mistakes. It is a complete overhaul of the system. Bots are rewritten from the ground up to properly serve their one purpose. It's obvious to everyone that Overkill put no thought into designing them."
+    />
+
+    <ModCard
+        image="./mods/dud.webp"
+        linkToMWS="/dud"
+        name="DLC Unlocker Deluxe"
+        description="The mod that started it all is back to kick ass! DLC Unlocker Deluxe completely reimagines PAYDAY 2's gameplay experience for new and old players alike! Experience your favorite game like never before."
+    />
+</div>
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1rem;
+    }
+</style>

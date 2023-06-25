@@ -1,0 +1,28 @@
+---
+// This is a page for when people click to download DLC Unlocker Deluxe.
+// Since mod was taken down ages ago, we are just gonna show them a nice video.
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="DLC Unlocker Deluxe download page">
+    <span class="truth">Big gravity controls the government</span>
+    <video width="800" controls autoplay>
+        <source src="./dud.webm" type="video/webm" />
+        Your browser is stinky and old. Boooooo
+    </video>
+</Layout>
+<style>
+    html {
+        background-color: black;
+    }
+    .truth {
+        font-family: 'comic sans ms', sans-serif;
+        color: transparent;
+        position: absolute;
+    }
+    video {
+        margin: 0 auto;
+        display: block;
+    }
+</style>
