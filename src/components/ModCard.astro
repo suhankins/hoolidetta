@@ -9,8 +9,8 @@ const { name, image, description, linkToMWS } = Astro.props;
 ---
 
 <article>
-    <img class="blur" src={image} aria-hidden="true" />
-    <img src={image} alt={`${name} thumbnail`} />
+    <img class="blur" src={image} aria-hidden="true" loading="lazy" />
+    <img src={image} alt={`${name} thumbnail`} loading="lazy" />
     <a href={linkToMWS}>{name}</a>
     <p>{description}</p>
 </article>
