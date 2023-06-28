@@ -4,6 +4,7 @@ import Logo from '../components/Logo.astro';
 import Marquee from '../components/Marquee.astro';
 import ListOfMods from '../components/ListOfMods.astro';
 import MeAndHoney from '../components/MeAndHoney.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Welcome to Hoolidetta Marriage Foundation">
@@ -27,39 +28,40 @@ import MeAndHoney from '../components/MeAndHoney.astro';
 			like Silent Assassin: Definitive Edition.
 		</p>
 		<ListOfMods />
+		
 	</main>
-
-	<style>
-		main {
-			margin: auto;
-			padding: 1.5rem;
-			max-width: 90ch;
-		}
-		h1 {
-			width: 100%;
-			text-align: center;
-			font-family: 'Cherry Bomb One', cursive;
-			font-size: 3rem;
-			margin: 0;
-		}
-		.text-gradient {
-			background-image: linear-gradient(
-				to top right,
-				#ff0098 0%,
-				#00a6ff 100% 139%
-			);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-size: 400%;
-			background-position: 0%;
-		}
-		.intro {
-			line-height: 1.6;
-			margin: 1rem 0;
-			border: 1px solid rgba(var(--accent), 25%);
-			background-color: white;
-			padding: 1rem;
-			border-radius: 0.4rem;
-		}
-	</style>
+	<Footer />
 </Layout>
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 90ch;
+	}
+	h1 {
+		width: 100%;
+		text-align: center;
+		font-family: 'Cherry Bomb One', cursive;
+		font-size: 3rem;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: linear-gradient(
+			to top right,
+			#ff0098 0%,
+			#00a6ff 100% 139%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.intro {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+</style>
