@@ -1,3 +1,7 @@
+---
+import { Image } from "astro:assets";
+import hoolichill from '../../public/hoolichill.gif';
+---
 <footer>
     <div class="footer-container">
         <p>
@@ -7,7 +11,7 @@
             person. Please don't send us legal complaints, it would make us sad.
         </p>
         <p>Honey, I love you.</p>
-        <img src="./hoolichill.gif" alt="Chilling Hooligan" loading="lazy" />
+        <Image src={hoolichill} alt="Chilling Hooligan" />
     </div>
 </footer>
 <style>
