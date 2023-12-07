@@ -25,13 +25,13 @@ const { title } = Astro.props;
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link
             rel="preload"
-            href="/fonts/FiraSans-Regular.ttf"
+            href="/fonts/FiraSans-Regular.woff2"
             as="font"
             type="font/ttf"
         />
         <link
             rel="preload"
-            href="/fonts/FiraSans-Bold.ttf"
+            href="/fonts/FiraSans-Bold.woff2"
             as="font"
             type="font/ttf"
         />
@@ -61,20 +61,20 @@ const { title } = Astro.props;
 
     @font-face {
         font-family: 'Fira Sans';
-        src: url('/fonts/FiraSans-Regular.ttf') format('truetype');
+        src: url('/fonts/FiraSans-Regular.woff2') format('woff2');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
-        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        unicode-range: U+00-U+7F;
     }
 
     @font-face {
         font-family: 'Fira Sans';
-        src: url('/fonts/FiraSans-Bold.ttf') format('truetype');
+        src: url('/fonts/FiraSans-Bold.woff2') format('woff2');
         font-weight: 700;
         font-style: normal;
         font-display: swap;
-        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        unicode-range: U+00-U+7F;
     }
 
     html {
