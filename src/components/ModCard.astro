@@ -11,8 +11,8 @@ const { name, image, description, linkToMWS } = Astro.props;
 
 <article>
     <Image class="blur" src={image} alt="" aria-hidden="true" />
-    <Image src={image} alt={`${name} thumbnail`} />
-    <a href={linkToMWS}>{name}</a>
+    <Image src={image} alt="" />
+    <h2><a href={linkToMWS}>{name}</a></h2>
     <p>{description}</p>
 </article>
 <style>
@@ -41,7 +41,7 @@ const { name, image, description, linkToMWS } = Astro.props;
         z-index: 0;
         left: 0px;
     }
-    a {
+    h2 {
         margin: 1rem 0;
         font-size: 1.5rem;
         background-image: linear-gradient(to top right, #0ff 0%, #f0f 100%);
@@ -50,8 +50,9 @@ const { name, image, description, linkToMWS } = Astro.props;
         background-size: 400%;
         background-position: 0%;
         transition: background-position 0.1s ease-in-out;
+        font-weight: 400;
     }
-    a:is(:hover, :focus) {
+    h2:is(:hover, :focus) {
         background-position: 100%;
     }
     p {
