@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 export interface props {
     name: string;
     image: ImageMetadata;
@@ -11,10 +11,15 @@ const { name, image, description, linkToMWS } = Astro.props;
 
 <article>
     <Image class="blur" src={image} alt="" aria-hidden="true" />
-    <Image src={image} alt="" />
-    <h2><a href={linkToMWS}>{name}</a></h2>
+    <a class="img-container" href={linkToMWS}>
+        <Image src={image} alt="" />
+    </a>
+    <h2>
+        <a href={linkToMWS}>{name}</a>
+    </h2>
     <p>{description}</p>
 </article>
+
 <style>
     article {
         position: relative;
